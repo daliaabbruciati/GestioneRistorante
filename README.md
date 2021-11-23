@@ -1,3 +1,3 @@
 # GestioneRistorante
-Progetto per il corso di "Programmazione e modellazione a oggetti".
-La cartella "Progetto" contiene l'eseguibile del progetto, la relazione e l'immagine del diagramma delle classi nel caso non si dovesse vedere bene nella relazione.
+Progetto per il corso di "Programmazione e modellazione a oggetti".</br>
+La cartella "Progetto" contiene l'eseguibile del progetto, la relazione e l'immagine ingrandita del diagramma delle classi.
