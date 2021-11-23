@@ -1,6 +1,8 @@
-Autore: Dalia Abbruciati
-Nome del progetto: "GestioneRistorante"
-Specifica del progetto:
+<h2>Progetto GestioneRistorante</h2>
+
+Dalia Abbruciati, matricola 277914
+
+<h3>Specifica del progetto:</h3>
 Si intende sviluppare un programma che simuli un’applicazione per la gestione delle prenotazioni di un ristorante dal punto di vista del ristoratore. Nello specifico, nella schermata iniziale si potranno scegliere varie opzioni come registrare la prenotazione di un tavolo oppure ordinare cibi d’asporto o con consegna a domicilio. Il ristoratore potrà inoltre visualizzare una lista con le informazioni sui clienti e su gli ordini effettuati da essi, sia per coloro che stanno mangiando al ristorante sia per coloro che hanno scelto l’asporto/domicilio.
 
 Se un cliente chiede di ordinare l’asporto/domicilio, verrà visualizzato il menù del ristorante in cui il ristoratore selezionerà i cibi richiesti dal cliente e una volta confermato il riepilogo dell’ordine, potrà inserire i dati del cliente come nome, orario in cui desidera ritirare/ricevere il cibo, un recapito telefonico e [per il domicilio] l’indirizzo di consegna.
