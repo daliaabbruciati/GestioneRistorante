@@ -35,6 +35,7 @@ namespace GestioneRistorante
         // Pulsante per confermare la prenotazione
         private void BtnConferma_Click(object sender, EventArgs e)
         {
+            // cerco il tavolo migliore per numero di persone all'interno della zona selezionata
             int idTavolo = tavoli.Where(x => x.Zona == cmbZona.SelectedIndex).OrderBy(x => x.NumeroPosti).Where(x => x.NumeroPosti >= numPersone.Value).Select(x => x.IDTavolo).FirstOrDefault();
             if(idTavolo == 0)
             {
