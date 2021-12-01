@@ -17,14 +17,15 @@ namespace GestioneRistorante
         List<Tavolo> tavoli = new List<Tavolo>();
         List<Prenotazione> prenotazioni = new List<Prenotazione>();
         private static Timer timer;
+        // uso Dictionary per far si hce ogni etichetta e bottone siano indicizzabili
         Dictionary<int, Control> labels;
         Dictionary<int, Control> buttons;
 
         // Costruttore della classe
         public FormPanoramicaTavoli()
         {
-            // Dictionary prende il numero del tavolo e il controllo ovvero
-            // l'eticehtta o il bottone
+            /* Dictionary prende il numero del tavolo e il controllo ovvero
+               l'eticehtta o il bottone */
             labels = new Dictionary<int, Control>(100);
             buttons = new Dictionary<int, Control>(100);
             InitializeComponent();
@@ -67,6 +68,7 @@ namespace GestioneRistorante
         // Quando clicco su un tavolo
         private void BtnTav_Click(object sender, EventArgs e)
         {
+            // con 'sender' prendo il nome del tavolo su cui ho cliccato
             string name = ((Button)sender).Name;
             string idTavolo = name.Substring(6);
             List<Tavolo> t = Database.GetInstance().GetTavoli();
