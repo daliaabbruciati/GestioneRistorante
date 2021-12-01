@@ -90,12 +90,12 @@ namespace GestioneRistorante
         // Metodo per aggiornare l'attesa di un tavolo
         public void UpdateAttesa(Tavolo t)
         {
-            // prendo dalla lista l'id della prenotazione a partire dal tavolo
+            // prendo l'id del tavolo aggiornato dal database per prendere l'id della sua prenotazione
             string idPrenotazione = tavoli.Where(x => x.IDTavolo == t.IDTavolo).FirstOrDefault().IDPrenotazione;
             // se il tavolo e' occupato
             if (!string.IsNullOrEmpty(idPrenotazione))
             {
-                // prendo la sua prenotazione
+                // prendo la prenotazione completa
                 Prenotazione p = prenotazioni.Where(x => x.IDPrenotazione == idPrenotazione).FirstOrDefault();
                 // aggiorno il tempo di attesa
                 int attesa = (DateTime.Now - ((AlTavolo)p).OraUltimoOrdine).Minutes;
