@@ -100,6 +100,7 @@ namespace GestioneRistorante
                 if (p.Stato == (int)Prenotazione.EnumStato.DA_PAGARE)
                 {
                     btnAggiungiCibo.Visible = false;
+                    txtTempoAttesa.Text = 0.ToString();
                 }
                 lblIndirizzo.Visible = false;
                 txtIndirizzoModifica.Visible = false;
